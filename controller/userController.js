@@ -53,7 +53,7 @@ app.delete('/',function(req,res){
 //searchKey parametresi gönderilir. Ad ve Soyada göre filtrleme yapar
 app.post('/userSearch',function(req,res){
    if(req.body.searchKey!=undefined&&req.body.searchKey!=""){
-    userModel.find({$or:[{"name":new RegExp(req.body.searchKey,"i")},{"lastName":new RegExp(req.body.searchKey,"i")},{"email":new RegExp(req.body.searchKey,"i")}]},function(err,response){
+    userModel.find({$or:[{"name":new RegExp(req.body.searchKey,"i")},{"lastName":new RegExp(req.body.searchKey,"i")}]},function(err,response){
         if(err)
         res.send(err)
         if(response.length==0)
