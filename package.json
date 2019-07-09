@@ -1,0 +1,20 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Servis lokasyon izleme",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Ahmet İPEK",
+  "license": "(ISC)",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.18",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "^1.9.1",
+    "save": "^2.3.2"
+  }
+}
